@@ -1,0 +1,147 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+.center {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+h1 {
+	margin:3em 0 0.5em;
+}
+.sort {
+	padding: 0;
+	padding-bottom: 1em;
+	margin-left: 30px;
+}
+.sort li {
+	display: inline-block;
+	margin-right: 20px;
+	list-style: none;
+}
+.chart { 
+	font-family:sans-serif; 
+	font-size:14px;
+	width: 680px;
+	overflow: auto;
+	white-space: nowrap;
+}
+.legend {
+	margin-top: 10px;
+	width: 100px;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: absolute;
+}
+.legend.left {
+	left: -110px;
+	margin-top: -35px;
+	text-align: right;
+}
+.legend.right {
+	right: 300px;
+	margin-top: -15px;
+}
+
+.legend span {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.info-box {
+	width: 300px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transition:all 0.2s;
+}
+.show {
+	opacity: 1;
+}
+.hide {
+	opacity: 0;
+}
+.info-box h3 {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	min-height:7em;
+	border-bottom: 3px solid #e2e2e2;
+}
+.info {
+	display: none;
+}
+.info-conversion, .ctr {	
+	color:#60BFCA;
+}
+.info-demo, .cr {	
+	color:#11ace0;
+}
+.letter {
+	position: relative;
+	padding-right: 1px;
+	display: inline-block;
+	width: 20px;
+	height: 100%;
+	vertical-align: bottom;
+	transition:all 0.2s;
+}
+/*.chart:hover .letter {
+	opacity:0.4;
+}*/
+
+.chart:hover .letter:hover {
+	opacity:0.7;
+}
+.bar {
+	width:20px;
+	transition:all 0.2s;
+	vertical-align: bottom;
+	position: absolute;
+	bottom: 0;	
+}
+.base-bar {
+	border-top: 1px solid #000;
+	z-index: 30;
+}
+.letter:hover .base-bar.back {
+	background-color:#f7f7f7;
+	z-index: 0;
+}
+
+.effect-bar-ctr {
+	background-color:#91dce5;
+	z-index: 10;
+}
+
+.effect-bar-cr {
+	background-color:#11ace0;
+	z-index: 20;
+}
+
+.info-date {
+	color:#ccc;
+	display: block;
+}
+.row {
+	margin-bottom: 10px;
+}
+.text-mid {
+	display:block;
+	font-size: 24px;
+	font-weight: bold;
+}
+.second-text {
+	color:#ccc;
+	font-size: 18px;
+	display: inline-block;
+	margin-left: 20px;
+	float: right;
+}
+.ctr, .cr {
+	float: left;
+}
+.ctr {
+	margin-right: 30px;
+}

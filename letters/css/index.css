@@ -1,0 +1,259 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 700 1.75em/1.38 'PT Sans';
+  color: rgb(0, 0, 0);
+}
+
+.caption {
+  display: inline-block;
+  float: left;
+  clear: both;
+  font-style: italic;
+  font-size: 0.571em;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(153, 153, 153);
+}
+
+.cr {
+  float: left;
+  height: 82px;
+}
+
+.caption-10,
+.caption-13,
+.caption-4,
+.caption-7,
+.cr .caption {
+  margin-left: 3px;
+}
+
+.cr .label {
+  letter-spacing: 2px;
+}
+
+.ctr {
+  float: left;
+}
+
+.ctr .caption {
+  margin: 1px 0 0 3px;
+}
+
+.ctr .label,
+.open .label {
+  letter-spacing: 1px;
+}
+
+.ctr .percent,
+.open .percent {
+  margin-top: 1px;
+}
+
+.image {
+  display: block;
+  width: 1000px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.label {
+  display: block;
+  float: left;
+  width: 163px;
+  margin-left: 3px;
+  font-size: 0.5em;
+  line-height: 1.38;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+
+.mail {
+  width: 1100px;
+  height: 450px;
+  background-color: #e9e9e9;
+  overflow: auto;
+}
+
+.note {
+  display: block;
+  float: right;
+  clear: both;
+  width: 351px;
+  margin-top: 2px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  font-size: 0.571em;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+}
+
+.open {
+  float: left;
+  height: 84px;
+}
+
+.open .caption {
+  margin-top: 1px;
+}
+
+.percent {
+  display: block;
+  float: left;
+  clear: both;
+  width: 167px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+}
+
+.stat {
+  width: 1100px;
+}
+
+.stat .container {
+  float: left;
+  width: 31.909090909%;
+  margin-top: 15px;
+}
+
+.text {
+  display: inline-block;
+  float: right;
+  width: 350px;
+  font-size: 0.964em;
+  line-height: 1.38;
+  color: rgb(0, 0, 0);
+}
+
+.caption-1 {
+  margin-left: 1px;
+}
+
+.container-2 {
+  margin-left: 19.1818199999%;
+}
+
+.container-1,
+.container-3,
+.container-4,
+.container-5 {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.container-6 {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.container-7 {
+  margin-left: 19%;
+}
+
+.cr-1 {
+  width: 14.7897727272%;
+  margin-left: 23px;
+}
+
+.cr-2,
+.cr-3,
+.cr-4,
+.cr-5 {
+  width: 14.8820326678%;
+  margin-left: 24px;
+}
+
+.ctr-1 {
+  width: 14.8806818181%;
+  margin-left: 24px;
+}
+
+.ctr-2,
+.ctr-3,
+.ctr-4,
+.ctr-5 {
+  width: 14.8820326678%;
+  margin-left: 23px;
+}
+
+.image-3 {
+  margin-top: -1px;
+}
+
+.mail-1 {
+  margin: 0 auto;
+}
+
+.mail-3 {
+  float: left;
+  clear: both;
+  margin-left: -0.09091%;
+}
+
+.mail-2,
+.mail-4,
+.mail-5 {
+  float: left;
+  clear: both;
+}
+
+.open-1 {
+  width: 14.8806818181%;
+}
+
+.open-2,
+.open-3,
+.open-4,
+.open-5 {
+  width: 14.8820326678%;
+}
+
+.stat-1 {
+  margin: 21px auto 0;
+}
+
+.stat-2,
+.stat-3,
+.stat-4,
+.stat-5 {
+  float: left;
+  margin-top: 20px;
+}
+
+.text-2,
+.text-3,
+.text-4 {
+  margin: 15px 0.18182% 0 0;
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+._text-1 {
+  width: 1100px;
+  min-height: 29px;
+  margin: 50px auto 0;
+  font-size: 1em;
+  line-height: 1.38;
+  color: rgb(0, 0, 0);
+}
+
+._text-3,
+._text-5,
+._text-7,
+._text-9 {
+  width: 1100px;
+  min-height: 29px;
+  margin: 80px auto 0;
+  font-size: 1em;
+  line-height: 1.38;
+  color: rgb(0, 0, 0);
+}
