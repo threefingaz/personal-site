@@ -2,3 +2,4 @@ datalab
 .idea
 .vscode
 .DS_Store
+*.zip

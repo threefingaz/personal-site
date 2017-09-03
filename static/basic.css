@@ -1,0 +1,41 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont,
+    'avenir next', avenir,
+    'helvetica neue', helvetica,
+    ubuntu,
+    roboto, noto,
+    'segoe ui', arial,
+    sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    background-image: linear-gradient(0deg, #157efb, #157efb 0%, transparent 0%);
+    transition: background-image .2s ease-in;
+}
+a:hover {
+    background-image: linear-gradient(0deg, #157efb, #157efb 30%, transparent 30%);
+    transition: background-image .2s ease-in;
+    border: none;
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 300px) {
+    html {
+        font-size: 14px;
+    }
+}
