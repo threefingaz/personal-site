@@ -19,17 +19,6 @@ body {
     width: 100%;
 }
 
-a {
-    /*background-image: linear-gradient(0deg, #157efb, #157efb 0%, transparent 0%);*/
-    box-shadow: inset 0 -1px 0 rgba(21, 126, 251, .2);
-    transition: box-shadow .1s ease-in;
-}
-a:hover {
-    /*background-image: linear-gradient(0deg, #157efb, #157efb 30%, transparent 30%);*/
-    box-shadow: inset 0 -.5rem 0 rgba(21, 126, 251, .5);
-    border: none;
-}
-
 @media screen and (max-width: 900px) {
     html {
         font-size: 16px;
