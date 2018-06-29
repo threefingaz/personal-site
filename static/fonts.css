@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "DrWatsonMedium";
+  src: url("fonts/BakerStreet-221B_DrWatson_SC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DigitalOctober";
+  src: url("fonts/DigitalOctober.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: "DigitalOctober";
+    src: url("fonts/DigitalOctober-DemiBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
