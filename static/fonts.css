@@ -1,18 +1,18 @@
 @font-face {
   font-family: "DrWatsonMedium";
-  src: url("fonts/BakerStreet-221B_DrWatson_SC.ttf") format("truetype");
+  src: url("fonts/BakerStreet-221B_DrWatson_SC.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "DigitalOctober";
-  src: url("fonts/DigitalOctober.ttf") format("truetype");
+  src: url("fonts/DigitalOctober.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
     font-family: "DigitalOctober";
-    src: url("fonts/DigitalOctober-DemiBold.ttf") format("truetype");
+    src: url("fonts/DigitalOctober-DemiBold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
   }
