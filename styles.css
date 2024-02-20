@@ -47,7 +47,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: auto;
-  height: calc(100vh - env(safe-area-inset-bottom));
+  height: 100%;
 }
 body {
   font: var(--text-size) 'Geologica', -apple-system, BlinkMacSystemFont,
@@ -59,6 +59,11 @@ body {
   color: var(--text-color);
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: subpixel-antialiased;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  box-sizing: border-box;
 }
 .content {
   display: flex;
@@ -72,10 +77,6 @@ body {
   margin-bottom: 0;
   text-align: center;
   max-width: var(--max-width);
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
   box-sizing: border-box;
 }
 .align-bottom {
