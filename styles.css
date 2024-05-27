@@ -9,6 +9,7 @@
     --width: 80%;
     --elevation: translate(0, -98vh);
     --easing: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    --initials-width: 80px;
     scroll-behavior: smooth;
 }
 @media (prefers-color-scheme: dark) {
@@ -22,24 +23,28 @@
     :root {
         --text-size: 86px/120px;
         --width: 80%;
+        --initials-width: 120px;
     }
 }
 @media screen and (max-width: 1024px) {
     :root {
         --text-size: 36px/56px;
         --width: 80%;
+        --initials-width: 60px;
     }
 }
 @media screen and (max-width: 860px) {
     :root {
         --text-size: 28px/48px;
         --width: 90%;
+        --initials-width: 40px;
     }
 }
 @media screen and (max-width: 440px) {
     :root {
         --text-size: 18px/28px;
         --width: 90%;
+        --initials-width: 30px;
     }
 }
 html,
@@ -91,12 +96,23 @@ body {
     max-width: var(--max-width);
     box-sizing: border-box;
 }
+.align-top,
 .align-bottom {
     max-width: var(--width);
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
+}
+.align-top {
+    padding: 0.5em 0;
+    width: 100%;
+}
+.align-bottom {
     align-self: flex-end;
+}
+.initials {
+    width: var(--initials-width);
 }
 p {
     text-align: left;
