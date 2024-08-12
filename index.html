@@ -13,6 +13,12 @@
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" href="/resources/icons/photo.png" />
         <link rel="apple-touch-icon" href="/resources/icons/photo.png" />
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var element = document.querySelector('.fade-in-element');
+                element.classList.add('visible');
+            });
+        </script>
     </head>
 
     <body>
@@ -69,18 +75,20 @@
                 </div>
             </div>
 
-            <div class="work grid-container">
+            <div class="work grid-container fade-in-element">
                 <h2 class="current-work col-2-4">
                     Senior Designer<br />
                     at Deutsche Bank
                 </h2>
 
-                <dl class="teasers col-all">
-                    <dt>One-Stop KYC Management System</dt>
-                    <dd><a href="/porfolioV24/kyc360.html"></a></dd>
-                    <dt>Sales referrals streamlined</dt>
-                    <dd><a href="/portfolioV24/refflow.html"></a></dd>
-                </dl>
+                <div class="teasers col-all">
+                        <a class="link project-card" href="/porfolioV24/kyc360.html">
+                        One-Stop KYC Management System</a>
+                        <a class="link project-card" href="/portfolioV24/refflow.html">
+                        Sales Referrals Streamlined</a>
+                        <a class="link project-card" href="/portfolioV24/fusionmetrics.html">FusionMetrics</a>
+
+                </div>
                 <h2 class="col-2-4"">Previous work</h2>
                 <section class="work-place col-all">
                     <h3 class="work-period col-2-3">2018—2021</h3>
@@ -156,16 +164,13 @@
                 Design advice
             </h2>
             <picture class="col-2-4">
+                <source media="(min-width: 1200px)" srcset="/resources/img/advice-photo@3x.jpg 3x, /resources/img/advice-photo@2x.jpg 2x, /resources/img/advice-photo.jpg 1x">
+                <source media="(min-width: 768px)" srcset="/resources/img/advice-photo@2x.jpg 2x, /resources/img/advice-photo.jpg 1x">
                 <source media="(min-width: 1200px)" srcset="/resources/img/advice-photo@3x.jpg">
                 <source media="(min-width: 768px)" srcset="/resources/img/advice-photo@2x.jpg">
                 <img class="advice-photo" src="/resources/img/advice-photo.jpg" alt="Design advice">
             </picture>
-            <p class="col-2-4">
-                If you want to know my thoughts on your design, product, or anything else, we can talk about it in a one-on-one session. I charge €100 for an hour of professional consulting, but the first half-hour session is always free to try.
-            <br>
-            <a class="book-button" href="https://www.linkedin.com/in/alnikitin-work"  target="_blank">Book a free meeting</a>
-            </p>
-            <p class="col-2-4">
+            <p class="col-1-2 bottom-text">
             Feel free to get in touch with me at
                 <a class="link" href="mailto:mail@alnikitin.com?subject=Hello
     from site">mail@alnikitin.com</a>
@@ -173,6 +178,11 @@
                 <a class="link"
                     href="https://www.linkedin.com/in/alnikitin-work"
                     target="_blank">LinkedIn</a>
+            </p>
+            <p class="col-3-4">
+                If you want to know my thoughts on your design, product, or anything else, we can talk about it in a one-on-one session. The first half-hour session is always free to try, but I&nbsp;charge €100 for an hour of professional&nbsp;consulting.
+            <br>
+            <a class="book-button" href="https://www.linkedin.com/in/alnikitin-work"  target="_blank">Book a free meeting</a>
             </p>
             </div>
         </div>
