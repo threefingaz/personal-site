@@ -9,50 +9,199 @@
         <meta property="og:description" content="Personal Site" />
         <meta property="og:title" content="Aleksei Nikitin" />
         <meta name="twitter:title" content="Aleksei Nikitin" />
-        <title>Aleksei Nikitin. Personal Site.</title>
-        <link rel="stylesheet" href="styles.css" />
+        <title>Aleksei Nikitin. Product Designer.</title>
+        <link rel="stylesheet" href="/styles.css" />
         <link rel="icon" href="/resources/icons/photo.png" />
         <link rel="apple-touch-icon" href="/resources/icons/photo.png" />
+        <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
     </head>
-
     <body>
-        <div class="content">
-            <div class="align-top">
-                <svg
-                    class="initials"
-                    viewBox="0 0 480 480"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M23 427H73V100L84.5 100.004L377.157 427H457V53H408V380.091L395.323 379.5L106.672 53H23V427Z"
-                    />
-                    <path
-                        d="M36.9995 278.973H191L224 315.973H36.9995V278.973Z"
-                    />
-                </svg>
+        <div id="top" class="content">
+            <svg
+                class="initials"
+                viewBox="0 0 480 480"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+            >
+                <path
+                    d="M0 0h60.974L419.026 379.779V0h60V480h-59.835L60.974 99.221V480H0V0z"
+                />
+                <path d="M57.555 287.4h124.798l61.41 65.007H57.555V287.4z" />
+            </svg>
+            <div class="intro grid-container">
+                <div class="col-3-4">
+                    <h1>
+                        Hi,<br />
+                        I'm Aleksei, a designer living in Berlin, Germany.
+                    </h1>
+                    <div class="contacts">
+                        <a
+                            class="glow-button"
+                            href="https://tidycal.com/alnikitin/initial-session"
+                            target="_blank"
+                            ><span>Book a meeting</span></a
+                        >
+                        <span class="links">
+                            <a
+                                class="link"
+                                href="mailto:mail@alnikitin.com?subject=Hello
+                from site"
+                                >mail@alnikitin.com</a
+                            >
+                            <span class="string-separator">·</span>
+                            <a
+                                class="link"
+                                href="https://www.linkedin.com/in/alnikitin-work"
+                                target="_blank"
+                                >LinkedIn</a
+                            >
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class="align-bottom">
-                <p>
-                    Hi,<br />
-                    I'm Aleksei&nbsp;Nikitin and I&nbsp;live in
-                    Berlin,&nbsp;Germany. Currently working as
-                    a&nbsp;Senior&nbsp;Designer at Deutsche&nbsp;Bank.
+            <div class="work grid-container fade-in-element">
+                <p class="now col-2-4">
+                    At Deutsche&nbsp;Bank,<br />right&nbsp;now I'm working on an
+                    internal&nbsp;app that lowers KYC&nbsp;risks and cuts
+                    licensing&nbsp;costs for third-party&nbsp;software.
                 </p>
-                <p>
-                    Feel free to get in touch with me at&nbsp;<a
-                        href="mailto:mail@alnikitin.com?subject=Hello from site"
-                        >mail@alnikitin.com</a
-                    >
-                    or connect on&nbsp;<a
-                        href="https://www.linkedin.com/in/alnikitin-work"
-                        target="_blank"
-                        >Linkedin</a
-                    >.
-                </p>
+                <section class="work-place col-all sber">
+                    <div class="col-1-2 image-sequence"></div>
+                    <h4 class="work-period col-2-3">2018—2021</h4>
+                    <p class="col-3-4">At the largest Russian&nbsp;bank,</p>
+                    <p class="col-3-4">
+                        I designed a reporting&nbsp;app and some
+                        data&nbsp;visualizations to help top&nbsp;management
+                        make better&nbsp;decisions.
+                    </p>
+                </section>
+                <section class="work-place col-all pik">
+                    <div class="col-1-2 image-sequence"></div>
+                    <h4 class="work-period col-2-3">2017—2018</h4>
+                    <p class="col-3-4">
+                        At a real estate management&nbsp;company,
+                    </p>
+                    <p class="col-3-4">
+                        I helped launch a pilot system for managing
+                        customer&nbsp;complaints. I worked on improving how
+                        requests are taken&nbsp;in, routed, and handled across
+                        the&nbsp;company.
+                    </p>
+                </section>
+                <section class="work-place col-all sbertech">
+                    <div class="col-1-2 image-sequence"></div>
+                    <h4 class="work-period col-2-3">2016—2017</h4>
+                    <p class="col-3-4">
+                        At the tech division of the largest Russian&nbsp;bank,
+                    </p>
+                    <p class="col-3-4">
+                        contributed to various services focused
+                        on&nbsp;corporate procurement, resource&nbsp;management,
+                        and document management.
+                    </p>
+                </section>
+                <section class="work-place col-all rucenter">
+                    <div class="col-1-2 image-sequence"></div>
+                    <h4 class="work-period col-2-3">2015—2016</h4>
+                    <p class="col-3-4">
+                        At a domain name&nbsp;register and
+                        hosting&nbsp;provider, redesigned the
+                        legacy&nbsp;interfaces of popular&nbsp;services.
+                    </p>
+                </section>
+                <section class="work-place col-all action">
+                    <div class="col-1-2 image-sequence"></div>
+                    <h4 class="work-period col-2-3">2013—2015</h4>
+                    <p class="col-3-4">
+                        At a publisher of professional&nbsp;periodicals,
+                    </p>
+                    <p class="col-3-4">
+                        worked on an online accountant application designed to
+                        automate accounting tasks for small and medium-sized
+                        businesses.
+                    </p>
+                </section>
+                <section class="work-place col-all artlebedev">
+                    <div class="image-sequence col-1-2"></div>
+                    <h4 class="work-period col-2-3">2011—2012</h4>
+                    <p class="col-3-4">
+                        At the biggest design studio in&nbsp;Russia,
+                    </p>
+                    <p class="col-3-4">
+                        primarily worked on a project for a
+                        cellular&nbsp;provider, focusing on developing B2B and
+                        B2C online accounts for customers.
+                    </p>
+                </section>
+            </div>
+            <div class="advice grid-container">
+                <h2 class="col-2-4">Design Consultation</h2>
+                <picture class="photo col-2-3">
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                            /resources/img/photo@3x.jpg 3x,
+                            /resources/img/photo@2x.jpg 2x,
+                            /resources/img/photo.jpg    1x
+                        "
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="
+                            /resources/img/photo@2x.jpg 2x,
+                            /resources/img/photo.jpg    1x
+                        "
+                    />
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="/resources/img/photo@3x.jpg"
+                    />
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="/resources/img/photo@2x.jpg"
+                    />
+                    <img src="/resources/img/photo.jpg" alt="Design advice" />
+                </picture>
+                <div class="col-3-4">
+                    <p>
+                        I can help you with your design&nbsp;work, products, or
+                        related&nbsp;projects through
+                        one-on-one&nbsp;discussions.
+                    </p>
+                    <p>
+                        The initial 30-minute session is&nbsp;free, so we can
+                        see if I'm the right&nbsp;fit. For more
+                        in-depth&nbsp;consultations, I charge €100
+                        per&nbsp;hour.
+                    </p>
+                    <p>If you want to work with&nbsp;me, get in&nbsp;touch.</p>
+                    <div class="contacts">
+                        <a
+                            class="glow-button"
+                            href="https://tidycal.com/alnikitin/initial-session"
+                            target="_blank"
+                            ><span>Book a free meeting</span>
+                        </a>
+                        <span class="links non-sticky">
+                            <a
+                                class="link"
+                                href="mailto:mail@alnikitin.com?subject=Hello
+                                        from site"
+                                >mail@alnikitin.com</a
+                            >
+                            <span class="string-separator">·</span>
+                            <a
+                                class="link"
+                                href="https://www.linkedin.com/in/alnikitin-work"
+                                target="_blank"
+                                >LinkedIn</a
+                            >
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
+    <script src="/script.js"></script>
 </html>
