@@ -42,8 +42,33 @@ const generateGlowButtons = () => {
 // Set variables on resize
 window.addEventListener("resize", generateGlowButtons);
 
+const linksElement = document.querySelector(".links");
+const introElement = document.querySelector(".intro");
+
+console.log(linksElement);
+
+const observerOptions = {
+  root: null, // The viewport
+  rootMargin: "0px",
+  threshold: 0, // Trigger when even one pixel is visible
+};
+
+const observerCallback = (entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      linksElement.classList.add("sticky-b-l");
+    } else {
+      linksElement.classList.remove("sticky-b-l");
+    }
+  });
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+observer.observe(introElement);
+
 document.addEventListener("DOMContentLoaded", function () {
   generateGlowButtons();
+
   // Fade-in element logic
   const fadeInElement = document.querySelector(".fade-in-element");
   if (fadeInElement) {
