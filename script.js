@@ -45,8 +45,6 @@ window.addEventListener("resize", generateGlowButtons);
 const linksElement = document.querySelector(".links");
 const introElement = document.querySelector(".intro");
 
-console.log(linksElement);
-
 const observerOptions = {
   root: null, // The viewport
   rootMargin: "0px",
