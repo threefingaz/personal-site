@@ -206,13 +206,12 @@ a[href="#top"] {
     bottom: 1.5rem;
     left: var(--initials-left);
     z-index: 100;
-
     display: flex;
     flex-direction: column;
+}
 
-    .string-separator {
-        display: none;
-    }
+.sticky-b-l .string-separator {
+    display: none;
 }
 
 .non-sticky {
@@ -241,11 +240,12 @@ a[href="#top"] {
     margin: 1rem 0;
     align-items: center;
     row-gap: 0.5rem;
-
-    .glow-button {
-        margin-right: 0.75rem;
-    }
 }
+
+.contacts .glow-button {
+    margin-right: 0.75rem;
+}
+
 .string-separator {
     display: inline;
     margin: 0 0.75rem;
@@ -491,13 +491,13 @@ a:hover {
         bottom: 0;
         left: 0;
         z-index: 100;
-
         flex-direction: row;
-
-        .string-separator {
-            display: inline;
-        }
     }
+
+    .sticky-b-l .string-separator {
+        display: inline;
+    }
+
     .non-sticky {
         display: block;
     }
@@ -518,11 +518,12 @@ a:hover {
         grid-column-end: -1;
         flex-direction: column;
         align-items: flex-start;
-
-        > span {
-            display: contents;
-        }
     }
+
+    .contacts > span {
+        display: contents;
+    }
+
     .end {
         width: 100%;
         order: -1;
