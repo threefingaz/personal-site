@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const workPlaces = document.querySelectorAll(".work-place");
+  const dbElement = document.querySelector(".db");
 
   workPlaces.forEach((workPlace) => {
     workPlace.addEventListener("mouseover", () => {
@@ -82,12 +83,18 @@ document.addEventListener("DOMContentLoaded", function () {
           otherWorkPlace.classList.add("fade");
         }
       });
+      if (dbElement && workPlace !== dbElement) {
+        dbElement.classList.add("fade");
+      }
     });
 
     workPlace.addEventListener("mouseout", () => {
       workPlaces.forEach((otherWorkPlace) => {
         otherWorkPlace.classList.remove("fade");
       });
+      if (dbElement) {
+        dbElement.classList.remove("fade");
+      }
     });
   });
 
@@ -164,4 +171,5 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
 });

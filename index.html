@@ -13,9 +13,8 @@
         <link rel="stylesheet" href="/styles.css" />
         <link rel="icon" href="/resources/icons/photo.png" />
         <link rel="apple-touch-icon" href="/resources/icons/photo.png" />
-        <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
     </head>
+
     <body>
         <div id="top" class="content">
             <svg
@@ -29,19 +28,9 @@
                 />
                 <path d="M57.555 287.4h124.798l61.41 65.007H57.555V287.4z" />
             </svg>
-            <div class="intro grid-container">
-                <div class="col-3-4">
-                    <h1>
-                        Hi,<br />
-                        I'm Aleksei, a designer living in Berlin, Germany.
-                    </h1>
+            <div class="grid-container">
+                <div class="col-2-4">
                     <div class="contacts">
-                        <a
-                            class="glow-button"
-                            href="https://tidycal.com/alnikitin/initial-session"
-                            target="_blank"
-                            ><span>Book a meeting</span></a
-                        >
                         <span class="links">
                             <a
                                 class="link"
@@ -57,16 +46,106 @@
                                 >LinkedIn</a
                             >
                         </span>
+                        <span class="location"> Berlin, Germany </span>
                     </div>
                 </div>
             </div>
-            <div class="work grid-container fade-in-element">
-                <p class="now col-2-4">
-                    At Deutsche&nbsp;Bank,<br />right&nbsp;now I'm working on an
-                    internal&nbsp;app that lowers KYC&nbsp;risks and cuts
-                    licensing&nbsp;costs for third-party&nbsp;software.
-                </p>
-                <section class="work-place col-all sber">
+            <div class="grid-container intro fade-in-element">
+                <section class="col-all large-text">
+                    <h1>Hi, I'm Aleksei</h1>
+                    <p>
+                        I&nbsp;translate business&nbsp;goals
+                        for&nbsp;development teams, accelerating the&nbsp;path
+                        from&nbsp;idea to&nbsp;product
+                    </p>
+                </section>
+                <span class="graph-label y">
+                    <img src="/resources/img/label-y.svg" alt="Goal, %" />
+                </span>
+                <span class="graph-label x">
+                    <img src="/resources/img/label-x.svg" alt="Time" />
+                </span>
+                <span class="graph-label with-me">
+                    <img src="/resources/img/label-w-me.svg" alt="With me" />
+                </span>
+                <span class="col-3-4 graph-label without-me">
+                    <img
+                        src="/resources/img/label-wo-me.svg"
+                        alt="Without me"
+                    />
+                </span>
+                <img
+                    class="graph"
+                    src="/resources/img/graph.svg"
+                    alt="graph illustration"
+                />
+            </div>
+            <div class="grid-container process">
+                <section class="grid-section col-all">
+                    <span class="work-period col-2-3">1</span>
+                    <p class="col-3-4">
+                        I will help you define project goals and ensure
+                        alignment across stakeholders through collaboration.
+                    </p>
+                    <span class="work-period col-2-3">2</span>
+                    <p class="col-3-4">
+                        I will create solutions that meet your audience's needs
+                        and provide clear, implementable guidelines for
+                        developers.
+                    </p>
+                    <span class="work-period col-2-3">3</span>
+                    <p class="col-3-4">
+                        I will prepare specifications to eliminate ambiguity,
+                        allowing your team to move forward with confidence.
+                    </p>
+                    <span class="work-period col-2-3">4</span>
+                    <p class="col-3-4">
+                        I will offer implementation guidance to keep project
+                        trajectory smooth and focused.
+                    </p>
+                </section>
+            </div>
+            <div class="grid-container testimonials">
+                <section class="grid-section col-all mask">
+                    <h4 class="col-3-4">
+                        This letter is from one product owner:
+                    </h4>
+                    <div class="col-2-4 bordered">
+                        <p class="letter">
+                            Hi Alexey, Big cheers for nailing Phase 1. Your
+                            commitment has been the key ingredient to our
+                            success, just like cocoa in to chocolate. Now let's
+                            go up for Phase 2. Many thanks, enjoy the chocs!
+                        </p>
+                    </div>
+                    <p class="col-3-4">
+                        (yes, I got a thank you letter with a chocolate)
+                    </p>
+                </section>
+                <section class="grid-section col-all">
+                    <h4 class="col-3-4">
+                        This is what a development lead said:
+                    </h4>
+                    <p class="col-2-4 bordered">
+                        Aleksei took over the development of interfaces and it
+                        was no longer the developers' job. Also, the designer
+                        started acting as an analyst, discussing requirements in
+                        the context of interface development. This is a very
+                        important contribution to the team's work and I
+                        appreciate it.
+                    </p>
+                </section>
+            </div>
+
+            <div class="grid-container work">
+                <section class="grid-section col-all db">
+                    <h4 class="col-2-4">
+                        Right now at Deutsche&nbsp;Bank, I'm working on an
+                        internal&nbsp;app that lowers KYC&nbsp;risks and cuts
+                        licensing&nbsp;costs for third-party&nbsp;software.
+                    </h4>
+                </section>
+                <section class="grid-section col-all work-place sber">
                     <div class="col-1-2 image-sequence"></div>
                     <h4 class="work-period col-2-3">2018—2021</h4>
                     <p class="col-3-4">At the largest Russian&nbsp;bank,</p>
@@ -76,7 +155,7 @@
                         make better&nbsp;decisions.
                     </p>
                 </section>
-                <section class="work-place col-all pik">
+                <section class="grid-section col-all work-place pik">
                     <div class="col-1-2 image-sequence"></div>
                     <h4 class="work-period col-2-3">2017—2018</h4>
                     <p class="col-3-4">
@@ -89,7 +168,7 @@
                         the&nbsp;company.
                     </p>
                 </section>
-                <section class="work-place col-all sbertech">
+                <section class="grid-section col-all work-place sbertech">
                     <div class="col-1-2 image-sequence"></div>
                     <h4 class="work-period col-2-3">2016—2017</h4>
                     <p class="col-3-4">
@@ -101,7 +180,7 @@
                         and document management.
                     </p>
                 </section>
-                <section class="work-place col-all rucenter">
+                <section class="grid-section col-all work-place rucenter">
                     <div class="col-1-2 image-sequence"></div>
                     <h4 class="work-period col-2-3">2015—2016</h4>
                     <p class="col-3-4">
@@ -110,7 +189,7 @@
                         legacy&nbsp;interfaces of popular&nbsp;services.
                     </p>
                 </section>
-                <section class="work-place col-all action">
+                <section class="grid-section col-all work-place action">
                     <div class="col-1-2 image-sequence"></div>
                     <h4 class="work-period col-2-3">2013—2015</h4>
                     <p class="col-3-4">
@@ -122,7 +201,7 @@
                         businesses.
                     </p>
                 </section>
-                <section class="work-place col-all artlebedev">
+                <section class="grid-section col-all work-place artlebedev">
                     <div class="image-sequence col-1-2"></div>
                     <h4 class="work-period col-2-3">2011—2012</h4>
                     <p class="col-3-4">
@@ -135,9 +214,8 @@
                     </p>
                 </section>
             </div>
-            <div class="advice grid-container">
-                <h2 class="col-2-4">Design Consultation</h2>
-                <picture class="photo col-2-3">
+            <div class="grid-container advice">
+                <picture class="photo col-1-3">
                     <source
                         media="(min-width: 1200px)"
                         srcset="
@@ -161,45 +239,21 @@
                         media="(min-width: 768px)"
                         srcset="/resources/img/photo@2x.jpg"
                     />
-                    <img src="/resources/img/photo.jpg" alt="Design advice" />
+                    <img src="/resources/img/photo.jpg" alt="Photo" />
                 </picture>
-                <div class="col-3-4">
-                    <p>
-                        I can help you with your design&nbsp;work, products, or
-                        related&nbsp;projects through
-                        one-on-one&nbsp;discussions.
-                    </p>
-                    <p>
-                        The initial 30-minute session is&nbsp;free, so we can
-                        see if I'm the right&nbsp;fit. For more
-                        in-depth&nbsp;consultations, I charge €100
-                        per&nbsp;hour.
-                    </p>
-                    <p>If you want to work with&nbsp;me, get in&nbsp;touch.</p>
-                    <div class="contacts">
-                        <a
-                            class="glow-button"
-                            href="https://tidycal.com/alnikitin/initial-session"
-                            target="_blank"
-                            ><span>Book a free meeting</span>
-                        </a>
-                        <span class="links non-sticky">
-                            <a
-                                class="link"
-                                href="mailto:mail@alnikitin.com?subject=Hello
-                                        from site"
-                                >mail@alnikitin.com</a
-                            >
-                            <span class="string-separator">·</span>
-                            <a
-                                class="link"
-                                href="https://www.linkedin.com/in/alnikitin-work"
-                                target="_blank"
-                                >LinkedIn</a
-                            >
-                        </span>
-                    </div>
-                </div>
+                <p class="col-3-4">
+                    Are you seeking to enhance the efficiency of your product
+                    development? I would be pleased to discuss how I can assist
+                    in advancing your project.
+                </p>
+                <p class="col-3-4">
+                    <a
+                        class="glow-button"
+                        href="https://tidycal.com/alnikitin/initial-session"
+                        target="_blank"
+                        ><span>Book a free meeting</span></a
+                    >
+                </p>
             </div>
         </div>
     </body>
