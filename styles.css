@@ -57,7 +57,6 @@
 @media screen and (max-width: 860px) {
     :root {
         --logo-position: block;
-        --content-padding-horizontal: 1rem;
     }
 }
 
@@ -499,8 +498,8 @@ a[href="#top"] {
 
 .intro .copy {
     box-sizing: border-box;
-    padding-top: 2rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
     padding-right: var(--intro-copy-padding-right);
     padding-left: var(--content-padding-horizontal);
     z-index: 50;
@@ -734,12 +733,19 @@ a[href="#top"] {
 }
 
 @media screen and (max-width: 440px) {
+    .advice h2 {
+        padding-bottom: 1rem;
+    }
+    .advice .links {
+        display: flex;
+        flex-direction: column;
+    }
     .advice .links a {
         display: inline-block;
         margin: 16px 0;
     }
-    .advice h2 {
-        padding-bottom: 1rem;
+    .advice .links .string-separator {
+        display: none;
     }
 }
 
