@@ -91,12 +91,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     hoverPath.style.visibility = "hidden";
   }
 
-  // Fade in element
-  const fadeInElement = document.querySelector(".fade-in-element");
-  if (fadeInElement) {
-    fadeInElement.classList.add("visible");
-  }
-
   // Setup workplace hover effects
   const workPlaces = document.querySelectorAll(".work-place");
   const dbElement = document.querySelector(".db");
@@ -162,40 +156,38 @@ document.addEventListener("DOMContentLoaded", async () => {
     },
   ];
 
-  const handleImageSequence = (element, section) => {
-    let currentIndex = 0;
-    let intervalId;
+  const imageSequenceDiv = document.querySelector(".image-sequence");
+  let currentIndex = 0;
+  let intervalId;
+  let currentSection = null;
 
-    const startSequence = () => {
-      const imageSequenceDiv = element.querySelector(".image-sequence");
-      if (!imageSequenceDiv) return;
+  const startSequence = (section) => {
+    if (!imageSequenceDiv) return;
+    currentSection = section;
 
+    imageSequenceDiv.innerHTML = "";
+    const img = document.createElement("img");
+    imageSequenceDiv.appendChild(img);
+
+    intervalId = setInterval(() => {
+      currentIndex = (currentIndex % section.count) + 1;
+      img.src = `${section.folder}/${section.className}${String(currentIndex).padStart(5, "0")}${section.extension}`;
+    }, 300);
+  };
+
+  const stopSequence = () => {
+    if (imageSequenceDiv) {
+      clearInterval(intervalId);
       imageSequenceDiv.innerHTML = "";
-      const img = document.createElement("img");
-      imageSequenceDiv.appendChild(img);
-
-      intervalId = setInterval(() => {
-        currentIndex = (currentIndex % section.count) + 1;
-        img.src = `${section.folder}/${section.className}${String(currentIndex).padStart(5, "0")}${section.extension}`;
-      }, 300);
-    };
-
-    const stopSequence = () => {
-      const imageSequenceDiv = element.querySelector(".image-sequence");
-      if (imageSequenceDiv) {
-        clearInterval(intervalId);
-        imageSequenceDiv.innerHTML = "";
-      }
-    };
-
-    element.addEventListener("mouseover", startSequence);
-    element.addEventListener("mouseout", stopSequence);
+      currentSection = null;
+    }
   };
 
   sections.forEach((section) => {
     const element = document.querySelector(`.${section.className}`);
     if (element) {
-      handleImageSequence(element, section);
+      element.addEventListener("mouseover", () => startSequence(section));
+      element.addEventListener("mouseout", stopSequence);
     }
   });
 });
@@ -221,16 +213,27 @@ document.addEventListener("mouseout", (e) => {
   }
 });
 
-// Links sticky observer
 const linksElement = document.querySelector(".links");
+const itialsElement = document.querySelector(".initials");
 const introElement = document.querySelector(".intro");
+const adviceElement = document.querySelector(".advice");
 
-const observerCallback = (entries) => {
-  entries.forEach((entry) => {
-    linksElement.classList[!entry.isIntersecting ? "add" : "remove"](
-      "sticky-b-l",
-    );
-  });
+const handleScroll = () => {
+  const introRect = introElement.getBoundingClientRect();
+  const adviceRect = adviceElement.getBoundingClientRect();
+
+  if (introRect.bottom <= 0 && adviceRect.top > window.innerHeight) {
+    linksElement.classList.add("sticky-b-l");
+  } else {
+    linksElement.classList.remove("sticky-b-l");
+  }
+
+  if (introRect.bottom <= 0) {
+    itialsElement.classList.add("sticky-t-l");
+  } else {
+    itialsElement.classList.remove("sticky-t-l");
+  }
 };
 
-createObserver(introElement, observerCallback);
+window.addEventListener("scroll", handleScroll);
+handleScroll();
