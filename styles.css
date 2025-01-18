@@ -224,7 +224,7 @@ p {
     padding: 0;
     padding-bottom: var(--paragraph-padding-bottom);
     margin: 0;
-    text-wrap: pretty;
+    text-wrap: initial;
 }
 
 a {
