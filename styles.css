@@ -20,7 +20,7 @@
     --text-size: 24px;
     --line-height: 36px;
     --h2-size: 1.777rem;
-    --h2-line-height: 2.5rem;
+    --h2-line-height: 2.75rem;
     --h3-size: 2rem;
     --h3-line-height: 3rem;
     --h4-size: 1rem;
@@ -113,7 +113,7 @@ body {
     scrollbar-color: var(--text-color) var(--bg-color);
     background-color: var(--bg-color);
     font-family:
-        "NonBureau",
+        "Subkultur",
         -apple-system,
         BlinkMacSystemFont,
         "avenir next",
@@ -132,8 +132,6 @@ body {
     color: var(--text-color);
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: subpixel-antialiased;
-    letter-spacing: 0.05rem;
-    word-spacing: 0.25rem;
     padding: env(safe-area-inset-top) env(safe-area-inset-right)
         env(safe-area-inset-bottom) env(safe-area-inset-left);
     box-sizing: border-box;
@@ -182,8 +180,8 @@ h4 {
 
 /* Typography */
 @font-face {
-    font-family: "NonBureau";
-    src: url("/resources/fonts/NonBureau-Regular.woff2") format("woff2");
+    font-family: "Subkultur";
+    src: url("/resources/fonts/Subkultur-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -191,7 +189,7 @@ h4 {
 
 h1 {
     font-size: var(--text-size);
-    line-height: var(--h2-line-height);
+    line-height: var(--line-height);
     font-weight: 400;
     margin: 0;
     padding: 0;
