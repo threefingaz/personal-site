@@ -647,6 +647,12 @@ a[href="#top"] {
     margin-left: 0.15rem;
 }
 
+.intro .copy .db-logo {
+    width: 0.85em;
+    margin-bottom: -0.08em;
+    margin-left: 0;
+}
+
 .image-sequence {
     position: sticky;
     box-sizing: border-box;
