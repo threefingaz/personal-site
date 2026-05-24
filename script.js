@@ -19,12 +19,6 @@ const animatePath = (path, delay = 0, duration = 300) => {
   });
 };
 
-const handlePathHover = (path, visible = true) => {
-  if (!path) return;
-  path.style.visibility = visible ? "visible" : "hidden";
-  path.style.strokeDashoffset = visible ? "0" : "1186px";
-};
-
 const createObserver = (target, callback) => {
   const options = {
     root: null,
@@ -83,13 +77,25 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Animate lettering
   await animateLettering();
 
-  // Setup hover path
-  const hoverPath = document.querySelector(".line-hover");
-  if (hoverPath) {
-    hoverPath.style.strokeDashoffset = "1186px";
-    hoverPath.style.transition = "stroke-dashoffset 0.6s ease";
-    hoverPath.style.visibility = "hidden";
-  }
+  // Setup hover line paths: measure each path and bind hover to its link
+  document.querySelectorAll(".link-hover").forEach((wrapper) => {
+    const link = wrapper.closest("a");
+    const path = wrapper.querySelector(".line-hover");
+    if (!link || !path) return;
+
+    const length = path.getTotalLength();
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+    path.getBoundingClientRect();
+    path.style.transition = "stroke-dashoffset 0.6s ease";
+
+    link.addEventListener("mouseenter", () => {
+      path.style.strokeDashoffset = "0";
+    });
+    link.addEventListener("mouseleave", () => {
+      path.style.strokeDashoffset = length;
+    });
+  });
 
   // Setup workplace hover effects
   const workPlaces = document.querySelectorAll(".work-place");
@@ -190,25 +196,4 @@ document.addEventListener("DOMContentLoaded", async () => {
       element.addEventListener("mouseout", stopSequence);
     }
   });
-});
-
-// Book meeting hover handlers
-document.addEventListener("mouseover", (e) => {
-  if (e.target.classList.contains("book-meeting")) {
-    const path = document.querySelector(".line-hover");
-    if (path) {
-      path.style.visibility = "visible";
-      path.style.strokeDashoffset = "0";
-    }
-  }
-});
-
-document.addEventListener("mouseout", (e) => {
-  if (e.target.classList.contains("book-meeting")) {
-    const path = document.querySelector(".line-hover");
-    if (path) {
-      path.style.strokeDashoffset = "1186px";
-      path.style.visibility = "hidden";
-    }
-  }
 });
