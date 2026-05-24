@@ -2,7 +2,8 @@
 
 ## Project Structure & Module Organization
 - Root is a static site entrypoint: `index.html`, `styles.css`, and `script.js`.
-- Subprojects live in folders like `work/`, `portfolioV19/`, `portfolioV24/`, `letters/`, `banki/`, `grcropper/`, and `multiply/`.
+- Subprojects live in folders like `work/`, `portfolioV19/`, `portfolioV24/`, `letters/`, `banki/`, `datalab/`, `grcropper/`, and `multiply/`.
+- Note: `styles.css` and `script.js` intentionally contain dead code (CSS rules and DOM lookups for sections removed during the May 2026 landing simplification). Cleanup is deferred to the June 2026 portfolio rebuild — see `docs/plans/completed/20260524-simplify-landing.md`. Do not delete these rules/functions prematurely.
 - Shared assets and media are in `resources/` and `static/` (fonts, icons, images, compiled bundles).
 - Third-party or generated files exist under `letters/bower_components/` and `*/static/`; avoid editing these directly unless there is no source alternative.
 
