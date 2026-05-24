@@ -212,28 +212,3 @@ document.addEventListener("mouseout", (e) => {
     }
   }
 });
-
-const linksElement = document.querySelector(".links");
-const itialsElement = document.querySelector(".initials");
-const introElement = document.querySelector(".intro");
-const adviceElement = document.querySelector(".advice");
-
-const handleScroll = () => {
-  const introRect = introElement.getBoundingClientRect();
-  const adviceRect = adviceElement.getBoundingClientRect();
-
-  if (introRect.bottom <= 0 && adviceRect.top > window.innerHeight) {
-    linksElement.classList.add("sticky-b-l");
-  } else {
-    linksElement.classList.remove("sticky-b-l");
-  }
-
-  if (introRect.bottom <= 0) {
-    itialsElement.classList.add("sticky-t-l");
-  } else {
-    itialsElement.classList.remove("sticky-t-l");
-  }
-};
-
-window.addEventListener("scroll", handleScroll);
-handleScroll();
