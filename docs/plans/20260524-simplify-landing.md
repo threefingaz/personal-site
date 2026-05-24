@@ -62,13 +62,13 @@ The variable lookups for `linksElement`, `itialsElement`, `introElement`, `advic
 **Files:**
 - Modify: `index.html`
 
-- [ ] Inside `.grid-container.intro`, remove the entire `<div class="graph-wrapper">` block (graph SVGs, `.me-line`, `.lettering`, `.with-me`, `.without-me`, graph-label x/y, animated curves).
-- [ ] Replace the H1 and H2 inside `<section class="col-all copy">` with the new copy (see Technical Details above), including inline `<svg class="db-logo">` next to "Deutsche Bank".
-- [ ] Delete entire `<div class="grid-container process">` block (4 numbered process steps).
-- [ ] Delete entire `<div class="grid-container testimonials">` block (chocolate + dev lead quotes).
-- [ ] Delete entire `<div class="grid-container work">` block: the "Right now at Deutsche Bank" paragraph, `.image-sequence` div, and all 6 `work-place` sections (Sber 2018–2021, Pik 2017–2018, Sbertech 2016–2017, Ru-Center 2015–2016, Action 2013–2015, Art. Lebedev 2011–2012).
-- [ ] Delete entire `<div class="grid-container advice">` block (photo `<picture>`, "Let's talk about how I can help" H2, book-meeting CTA with hover SVG, footer contacts).
-- [ ] Verify in browser: `python3 -m http.server 8000`, open `http://localhost:8000/`. Page shows header + intro only. Mailto, LinkedIn, location render. DB logo SVG renders inline within the H2.
+- [x] Inside `.grid-container.intro`, remove the entire `<div class="graph-wrapper">` block (graph SVGs, `.me-line`, `.lettering`, `.with-me`, `.without-me`, graph-label x/y, animated curves).
+- [x] Replace the H1 and H2 inside `<section class="col-all copy">` with the new copy (see Technical Details above), including inline `<svg class="db-logo">` next to "Deutsche Bank".
+- [x] Delete entire `<div class="grid-container process">` block (4 numbered process steps).
+- [x] Delete entire `<div class="grid-container testimonials">` block (chocolate + dev lead quotes).
+- [x] Delete entire `<div class="grid-container work">` block: the "Right now at Deutsche Bank" paragraph, `.image-sequence` div, and all 6 `work-place` sections (Sber 2018–2021, Pik 2017–2018, Sbertech 2016–2017, Ru-Center 2015–2016, Action 2013–2015, Art. Lebedev 2011–2012).
+- [x] Delete entire `<div class="grid-container advice">` block (photo `<picture>`, "Let's talk about how I can help" H2, book-meeting CTA with hover SVG, footer contacts).
+- [x] verify (manual - orchestrator runs in final verification task)
 
 ### Task 2: Remove dead scroll handler from script.js
 
